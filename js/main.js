@@ -11,8 +11,8 @@ $( "#submit" ).click(function() {
     console.log(element);
     console.log(client);
     if (element.email !== client.email) {
-      t1 = parseInt(element.time / 100);
-      t2 = parseInt(client.time / 100);
+      t1 = parseInt(element.time / 40);
+      t2 = parseInt(client.time / 40);
 console.log(t1,t2);
 
       if(t1 === t2) {
