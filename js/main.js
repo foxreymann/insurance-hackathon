@@ -11,12 +11,13 @@ $( "#submit" ).click(function() {
     console.log(element);
     console.log(client);
     if (element.email !== client.email) {
-      t1 = parseInt(element.time / 50);
-      t2 = parseInt(client.time / 50);
+      t1 = parseInt(element.time / 100);
+      t2 = parseInt(client.time / 100);
 console.log(t1,t2);
 
       if(t1 === t2) {
         fraud = true;
+console.log('fraud!');
       }
     }
   }
@@ -38,6 +39,7 @@ console.log(fraud);
 
 $( "#new-quote" ).click(function() {
   $('.result').hide();
+  $('#email').val('');
   emailTime = new Date(),
   q1Time = new Date(),
   fraud = false;
