@@ -22,6 +22,8 @@
         <!-- Add your site or application content here -->
         <h2>Car Insurance Quote</h2>
 
+        <button id="new-quote">new quote</button>
+
         <label>
           email:
           <input type="text" id="email" placeholder="email" />
@@ -30,9 +32,9 @@
         <label>
           question 1:
           <select id="q1">
-            <option answer="answer1">Answer 1</option>
-            <option answer="answer2" selected>Answer 2</option>
-            <option answer="answer3">Answer 3</option>
+            <option value="answer1">Answer 1</option>
+            <option value="answer2" selected>Answer 2</option>
+            <option value="answer3">Answer 3</option>
           </select>
         </label>
 
@@ -41,8 +43,6 @@
         <h2 class="result" id="ok">valid customer. give quote</h2>
 
         <h2 class="result" id="err">shady customer. mark as possible fraud in a database and ask to call for a quote</h2>
-
-        <button id="new-quote">new quote</button>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
